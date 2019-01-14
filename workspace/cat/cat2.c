@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static void do_cat(const char *path);
-static void die(const char *s);
-
 int main(int argc, char *argv[])
 {
     int i;
@@ -14,13 +11,13 @@ int main(int argc, char *argv[])
         int c;
 
         f = fopen(argv[i], "r");
-        if (!f)
+        if(!f)
         {
             perror(argv[i]);
             exit(1);
         }
-        while ((c = fgetc(f)) != EOF) {
-            if (putchar(c) < 0) exit(1);
+        while((c = fgetc(f)) != EOF) {
+            if(putchar(c) < 0) exit(1);
         }
         fclose(f);
     }

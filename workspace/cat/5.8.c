@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
             sscanf(path, "%s", path);
 
             f = fopen(path, "r");
-            if (!f)
+            if(!f)
             {
                 perror(path);
                 exit(1);
@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
         {
             FILE *f;
             f = fopen(argv[i], "r");
-            if (!f)
+            if(!f)
             {
                 perror(argv[i]);
                 exit(1);
@@ -49,8 +49,9 @@ int main(int argc, char *argv[])
 static void do_cat(FILE *f)
 {
     int c;
-    while ((c = fgetc(f)) != EOF) {
+    while((c = fgetc(f)) != EOF)
+    {
         // if(fputc(c, stdout) < 0) exit(1);
-        if (putchar(c) < 0) exit(1);
+        if(putchar(c) < 0) exit(1);
     }
 }
