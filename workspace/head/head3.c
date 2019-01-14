@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     int opt;
     long nlines = DEFAULT_N_LINES;
 
-    while((opt = getopt_long(argc, argv, "n:", longopts, NULL)) != -1)
+    while((opt = getopt_long(argc, argv, "hn:", longopts, NULL)) != -1)
     {
         switch (opt)
         {
