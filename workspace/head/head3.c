@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
                 fprintf(stdout, "Usage: %s [-n LINES] [FILE ...]\n", argv[0]);
                 exit(0);
             case '?':
-                fprintf(stdout, "Usage: %s [-n LINES] [FILE ...]\n", argv[0]);
+                fprintf(stderr, "Usage: %s [-n LINES] [FILE ...]\n", argv[0]);
                 exit(1);
         }
     }
