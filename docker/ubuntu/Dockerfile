@@ -15,3 +15,4 @@ RUN sudo apt-get -y install vim
 RUN sudo apt-get -y install man
 RUN sudo apt-get -y install manpages-dev
 RUN sudo apt-get -y install strace
+RUN sudo apt-get -y install gdb
