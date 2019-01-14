@@ -8,10 +8,10 @@ WORKDIR /workspace
 
 RUN apt-get update
 
-RUN apt-get -y install sudo && \
-    sudo apt-get -y install build-essential && \
-    sudo apt-get -y install git && \
-    sudo apt-get -y install vim && \
-    sudo apt-get -y install man && \
-    sudo apt-get -y install manpages-dev && \
-    apt-get install -y strace
+RUN apt-get -y install sudo
+RUN sudo apt-get -y install build-essential
+RUN sudo apt-get -y install git
+RUN sudo apt-get -y install vim
+RUN sudo apt-get -y install man
+RUN sudo apt-get -y install manpages-dev
+RUN sudo apt-get -y install strace
