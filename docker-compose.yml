@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  linux:
+    build:
+      context: .
+      dockerfile: ./docker/ubuntu/Dockerfile
+    environment:
+      TZ: Japan
+    volumes:
+      - ./workspace:/workspace
+    security_opt:
+      - seccomp:unconfined
