@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
                 break;
             case 'h':
                 fprintf(stdout, "Usage: %s [-n LINES] [FILE ...]\n", argv[0]);
-                exit(1);
+                exit(0);
             case '?':
                 fprintf(stdout, "Usage: %s [-n LINES] [FILE ...]\n", argv[0]);
                 exit(1);
