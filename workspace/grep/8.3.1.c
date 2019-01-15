@@ -48,10 +48,6 @@ int main(int argc, char *argv[])
         }
     }
 
-    printf("opt_i: %d\n", opt_i);
-    printf("opt_v: %d\n", opt_v);
-    printf("pattern: %s\n", pattern);
-
     if(opt_i == 0)
     {
         err = regcomp(&pat, pattern, REG_EXTENDED | REG_NOSUB | REG_NEWLINE);
@@ -84,8 +80,6 @@ int main(int argc, char *argv[])
     else
     {
         int i;
-
-        printf("optind: %d\n", optind);
 
         for(i = optind; i < argc; i++)
         {
