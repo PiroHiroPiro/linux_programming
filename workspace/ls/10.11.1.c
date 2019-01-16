@@ -43,7 +43,7 @@ static void do_traverse(char *path)
     {
         strcpy(filepath, path);
         int pos = strlen(filepath) - 1;
-        if (pos >= 0 && filepath[pos] != '/') strcat(filepath, "/");
+        if(pos >= 0 && filepath[pos] != '/') strcat(filepath, "/");
         strcat(filepath, ent->d_name);
 
         printf("%s\n", filepath);
