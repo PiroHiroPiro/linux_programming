@@ -7,6 +7,7 @@ ADD ./workspace /workspace
 WORKDIR /workspace
 
 RUN apt-get update
+RUN apt-get upgrade -y
 
 RUN apt-get -y install sudo
 RUN sudo apt-get -y install build-essential
