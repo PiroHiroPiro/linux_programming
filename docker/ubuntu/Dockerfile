@@ -2,8 +2,6 @@ FROM ubuntu:latest
 
 RUN mkdir /workspace
 
-ADD ./workspace /workspace
-
 WORKDIR /workspace
 
 RUN apt-get update
