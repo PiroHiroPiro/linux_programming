@@ -17,3 +17,4 @@ RUN sudo apt-get -y install manpages-dev
 RUN sudo apt-get -y install strace
 RUN sudo apt-get -y install gdb
 RUN sudo apt-get -y install tree
+RUN sudo apt-get install psmisc
