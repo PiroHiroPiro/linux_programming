@@ -1,8 +1,8 @@
 FROM ubuntu:latest
 
-RUN mkdir /workspace
+RUN mkdir /root/workspace
 
-WORKDIR /workspace
+WORKDIR /root/workspace
 
 RUN apt-get update
 RUN apt-get upgrade -y
@@ -16,4 +16,4 @@ RUN sudo apt-get -y install manpages-dev
 RUN sudo apt-get -y install strace
 RUN sudo apt-get -y install gdb
 RUN sudo apt-get -y install tree
-RUN sudo apt-get install psmisc
+RUN sudo apt-get -y install psmisc

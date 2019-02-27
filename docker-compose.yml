@@ -5,9 +5,11 @@ services:
     build:
       context: .
       dockerfile: ./docker/ubuntu/Dockerfile
+    container_name: "linux"
     environment:
       TZ: Japan
+    working_dir: "/root/workspace"
     volumes:
-      - ./workspace:/workspace
+      - ./workspace:/root/workspace
     security_opt:
       - seccomp:unconfined
