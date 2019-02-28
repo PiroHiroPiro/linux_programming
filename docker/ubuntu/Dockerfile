@@ -17,3 +17,6 @@ RUN sudo apt-get -y install strace
 RUN sudo apt-get -y install gdb
 RUN sudo apt-get -y install tree
 RUN sudo apt-get -y install psmisc
+RUN sudo apt-get -y install openbsd-inetd
+RUN sudo apt-get -y install xinetd
+RUN sudo apt-get -y install net-tools
