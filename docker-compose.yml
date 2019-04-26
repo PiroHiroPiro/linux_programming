@@ -1,15 +1,15 @@
-version: '3'
+version: "3"
 
 services:
-  linux:
+  ubuntu:
     build:
       context: .
       dockerfile: ./docker/ubuntu/Dockerfile
-    container_name: "linux"
+    container_name: "ubuntu"
     environment:
       TZ: Japan
-    working_dir: "/root/workspace"
-    volumes:
-      - ./workspace:/root/workspace
     security_opt:
       - seccomp:unconfined
+    volumes:
+      - ./workspace:/root/workspace
+    working_dir: "/root/workspace"
