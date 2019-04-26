@@ -1,8 +1,39 @@
 # ふつうのLinuxプログラミング
 
-書籍「ふつうのLinuxプログラミング」を学ぶ為のリポジトリ．
+A repository for learning the book "ふつうのLinuxプログラミング".
 
-## Bashに入る方法
+## Requirement
+
+- [Docker](https://www.docker.com/)
+  - docker-compose
+
+## Usage
+
+Enter the bash:
+
+```console
+$ docker-compose run ubuntu bash
 ```
-$ docker-compose run linux bash
+
+## Install
+
+Clone repository:
+
+```console
+$ git clone https://github.com/PiroHiroPiro/linux_programming.git
+$ cd linux_programming
 ```
+
+Build image:
+
+```console
+$ docker-compose build
+```
+
+## License
+
+This software is released under the MIT License, see [LICENSE](https://github.com/PiroHiroPiro/linux_programming/blob/master/LICENSE).
+
+## Author
+
+[Hiroyuki Nishizawa](https://github.com/PiroHiroPiro)
