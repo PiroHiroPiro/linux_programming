@@ -9,7 +9,7 @@ A repository for learning the book "ふつうのLinuxプログラミング".
 
 ## Usage
 
-Enter the bash:
+Run bash:
 
 ```console
 $ docker-compose run ubuntu bash
